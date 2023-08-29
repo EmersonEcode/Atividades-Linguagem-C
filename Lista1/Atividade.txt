@@ -1,0 +1,235 @@
+Exercicio - 1
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+       int n1, n2;
+       float d1, d2;
+
+            
+        printf("Digite o primeiro numero: ");
+        scanf("%d", &n1);
+        printf("Digite O segundo numero numero: ");
+        scanf("%d", &n2);
+
+        printf("o resultado da soma de %d + %d = %d \n",n1,n2,(n1+n2));
+        printf("A subtração de %d - %d = %d \n",n1,n2,(n1-n2));
+        printf("A subtração de %d - %d = %d  \n",n2,n1,(n2-n1));
+        printf("A multiplicação de %d x %d = %d  \n \n",n1,n2,(n1*n2));
+        
+        d1 = n1;
+        d2 = n2;
+
+        printf("Divisao de %d / %d = %f  \n",n1,n2,(d1 / d2));
+        printf("Divisao de %d / %d = %f \n\n ",n2,n1,(d2 / d1));
+        
+        printf(" o quociente da primeira divisão  é %d \n",n1/n2);
+        printf(" o quociente da segunda divisão  é %d\n\n",n2/n1);
+        printf("O resto da primeira divisão é = %d\n",n1%n2);
+        printf("O resto da primeira divisão é = %d\n\n",n2%n1);
+
+
+
+
+            return 0;
+}      
+
+Exercicio - 2
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+            float n1, n2 , n3;
+
+            printf("Digite a primeira nota: ");
+            scanf("%f",&n1);
+            printf("Digite a segunda nota: ");
+            scanf("%f",&n2);
+            printf("Digite a terceira nota: ");
+            scanf("%f",&n3);
+
+            printf("a media do aluno = %.1f", (n1+n2+n3)/3);
+            return 0;
+}      
+
+Exercicio - 3
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+            float deposito,juros, rd;
+            printf("Digite o Valor do deposito:");
+            scanf("%f", &deposito);
+            printf("Digite o Valor do juros:");
+            scanf("%f", &juros);
+            rd = (juros / 100)*deposito;
+            
+            printf("O valor do rendimento é %.2f e o valor total depois do redimento é %.2f ",rd, rd + deposito);
+
+            return 0;
+
+
+}
+
+
+
+Exercicio - 4
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+            float num;
+            int inteiro;
+
+
+            printf("Digite um número: ");
+            scanf("%f", &num);
+            inteiro = num;
+            printf("A parte inteira do numero é %d\n", inteiro);
+            printf("A parte fracionaria é %f\n",num);
+            printf("Arredondado %.f\n\n",num);
+
+            return 0;
+
+}                 
+
+
+Exercicio 5
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+        int main(){
+
+            int num1, raiz, elevado;
+
+
+            printf("digite um numero: ");
+            scanf("%d", &num1);
+
+            raiz = sqrt(num1);
+            elevado = pow(num1,2);
+            printf("a raiz de %d é %d \n e , %d elevado ao quadrado é %d",num1, raiz,num1, elevado);
+
+            return 0;
+}
+
+Exercicio 6 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+        int idade, meses, dias, horas;
+
+        printf("Digite sua idade: ");
+        scanf("%d", &idade);
+        meses = idade * 12;
+        dias = meses * 30;
+        horas = dias * 24;
+        printf("Voce tem %d anos %d meses % d dias e %d horas",idade,meses,dias,horas);
+            return 0;
+}      
+
+Exercicio 7 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+            float area, base, altura;
+
+            printf("Digite a base do tringulo:\n");
+            scanf("%f",&base);
+            printf("Digite a altura do tringulo:\n");
+            scanf("%f",&altura);
+
+            area = (base * altura)/ 2;
+            printf("A area do tringulo é %.1f \n",area);
+
+
+            return 0;
+}      
+
+Exercicio 8
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define pi 3.14
+
+        int main(){
+            float raio, area;
+
+            printf("Digite o raio do circulo:\n");
+            scanf("%f",&raio);
+            area = pi * pow(raio,2);
+            printf("A area do tringulo é %.2f \n",area);
+
+
+            return 0;
+}      
+
+
+Exercicio 9 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+           float fracao, area, base_menor,base_maior,altura;
+
+            printf("Digite o comprimento da base menor: ");
+            scanf("%f", &base_menor);
+
+            printf("Digite o comprimento da base maior: ");
+            scanf("%f", &base_maior);
+            printf("Digite a altura: ");
+            scanf("%f", &altura);
+        
+            fracao = 1.0 / 2.0;
+            area = fracao * (base_menor + base_maior) * altura;
+            
+            printf("A are do Trapezio é %.2f\n",area);
+            return 0;
+}   
+
+
+
+Exercicio 10 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+        int main(){
+        
+            float salario, ir;
+
+            printf("Digite seu salario: ");
+            scanf("%f",&salario);
+            ir = salario * 0.05;
+            printf("O imposto de renda a ser pago é %.2f R$",ir);
+            return 0;
+}         
+
