@@ -11,7 +11,7 @@
                 float salario,total_salario;
                 
 
-                for(i = 0;i <= 3;i++){
+                for(i = 1;i <= 15;i++){
 
                      
                      printf("Digite o seu Sexo (M/F): ");
@@ -47,7 +47,7 @@
                 }
                     printf("A media de salário do grupo é %g \n",total_salario/i);
                     printf("A quantidade de mulheres que recebem até 100 é: %d \n",contF);
-                    printf("A maior idade do grupo é: %d \n",maior_idade);
+                    v
                     printf("A menor idade do grupo é: %d \n",menor_idade);
 
                 
